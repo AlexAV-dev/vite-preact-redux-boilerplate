@@ -1,0 +1,30 @@
+{
+  "name": "journey-journual",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "pretty": "prettier --check --write src",
+    "lint": "eslint --max-warnings 0 --ext js,jsx,json src",
+    "lintFix": "yarn pretty && eslint --fix --ext js,jsx,json src"
+  },
+  "dependencies": {
+    "@preact/compat": "^17.0.3",
+    "preact": "^10.5.13"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.0.0",
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
+    "eslint-plugin-valtio": "^0.4.1",
+    "prettier": "^2.4.1",
+    "sass": "^1.43.4",
+    "vite": "^2.6.4"
+  }
+}

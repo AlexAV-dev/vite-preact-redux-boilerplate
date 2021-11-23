@@ -1,0 +1,48 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "prettier",
+    "sort-imports-es6-autofix",
+    "import"
+  ],
+  "extends": [
+    "plugin:react/recommended",
+    "eslint:recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:prettier/recommended",
+    "plugin:valtio/recommended"
+  ],
+  "rules": {
+    "require-await": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "tabWidth": 2,
+        "semi": false,
+        "singleQuote": true,
+        "endOfLine": "auto"
+      }
+    ],
+    "sort-imports-es6-autofix/sort-imports-es6": [
+      2,
+      {
+        "ignoreCase": false,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+      }
+    ],
+    "import/prefer-default-export": "error"
+  }
+}
