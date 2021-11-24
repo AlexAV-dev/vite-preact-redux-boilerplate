@@ -1,5 +1,13 @@
-import { render } from 'preact'
-import { App } from './app'
+/* eslint-env browser */
 import './index.css'
+import { App } from './app'
+import { Provider } from 'react-redux'
+import { render } from 'preact'
+import { store } from './redux/store'
 
-render(<App />, document.getElementById('app'))
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('app')
+)
